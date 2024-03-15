@@ -96,7 +96,7 @@ function Portafolio() {
                     <article className="card card--experience">
                         <h2 className="card__title">Experiences</h2>
                         <div className="experience">
-                            <img src="public/images/logo-_1_.jpeg" alt="logo" className="experience__image" />
+                            <img src="/images/logo.png" alt="logo" className="experience__image" />
                             <div className="experience__info">
                                 <p className="experience__time">Feb 2017 - Current</p>
                                 <h3 className="experience__job">Fullstack web Developer</h3>
@@ -104,7 +104,7 @@ function Portafolio() {
                             </div>
                         </div>
                         <div className="experience">
-                            <img src="public/images/logo.png" alt="logo" className="experience__image" />
+                            <img src="/images/logo.png" alt="logo" className="experience__image" />
                             <div className="experience__info">
                                 <p className="experience__time">Feb 2017 - Current</p>
                                 <h3 className="experience__job">Fullstack web Developer</h3>
@@ -112,7 +112,7 @@ function Portafolio() {
                             </div>
                         </div>
                         <div className="experience">
-                            <img src="public/images/logo.png" alt="logo" className="experience__image" />
+                            <img src="/images/logo.png" alt="logo" className="experience__image" />
                             <div className="experience__info">
                                 <p className="experience__time">Feb 2017 - Current</p>
                                 <h3 className="experience__job">Fullstack web Developer</h3>
