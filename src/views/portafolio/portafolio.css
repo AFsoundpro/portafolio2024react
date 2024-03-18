@@ -1,15 +1,14 @@
-
 :root {
     --primary-color: hsl(46, 84%, 56%);
     --text-color: hsl(0, 0%, 31%);
     --bg-color: hsl(0,0%,90%);
     --bg-card-color: hsl(0, 0%, 98%);
-    --transition:color 0.1s, background-color 0.2s ease-in-out;
+    --transition: color 0.1s, background-color 0.2s ease-in-out;
     --border-radius: 0.4em;
     --skills-bar-length: 0%;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -23,7 +22,7 @@ img {
     display: block;
 }
 
-body{
+body {
     margin: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -35,7 +34,6 @@ body.dark {
     --text-color: hsl(0, 0%, 83%);
     --bg-color: hsl(0, 0%, 15%);
     --bg-card-color: hsl(0, 0%, 20%);
-
 }
 
 header {
@@ -44,7 +42,7 @@ header {
     height: 75px;
     padding: 0 1.5em;
     background-color: var(--bg-card-color);
-    gap: 280px;
+    gap: 20px;
     transition: var(--transition);
 }
 
@@ -116,7 +114,7 @@ header {
 }
 
 @media screen and (min-width: 720px) {
-    .main{
+    .main {
         grid-template-columns: min-content 1fr;
     }
 }
@@ -133,7 +131,6 @@ header {
         align-items: start;
     }
 }
-
 
 .card {
     padding: 1em;
@@ -168,7 +165,7 @@ header {
 .card__text {
     font-size: 0.9rem;
     line-height: 1.6;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .card--project {
@@ -177,16 +174,13 @@ header {
     grid-column: 1 / -1;
 }
 
-
-@media screen and (min-wdth: 760px) {
+@media screen and (min-width: 760px) {
     .card--project {
         display: grid;
         grid-template-columns: min-content 1fr;
         grid-column: 1 / -1;
     }
 }
-
-/* BARRAS DE PROGRESO */
 
 .skills {
     padding: 1em 0;
@@ -247,7 +241,7 @@ header {
 }
 
 .skills__bar--50::after {
-    --skills-bar-kength: 50%;
+    --skills-bar-length: 50%;
 }
 
 .skills__bar--60::after {
@@ -295,7 +289,6 @@ header {
     margin-bottom: 0.5em;
     color: var(--primary-color);
     transition: var(--transition);
-
 }
 
 .experience__description {
@@ -310,7 +303,7 @@ header {
 @media screen and (min-width: 760px) {
     .project {
         margin-left: 2em;
-    }    
+    }
 }
 
 .project__tags {
@@ -324,7 +317,7 @@ header {
     .project__tags {
         width: 325px;
         font-size: 0.8rem;
-    }    
+    }
 }
 
 .project__tag {
@@ -370,9 +363,9 @@ header {
     margin-right: 1em;
 }
 
- .no-margin {
+.no-margin {
     margin: 0;
- }
+}
 
 @keyframes skills-bar-fill {
     to {
