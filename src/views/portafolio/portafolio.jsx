@@ -85,10 +85,7 @@ function Portafolio() {
                                     </a>
                                 </div>
                                 <p className="card__text">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quisquam dolorum deleniti accusantium
-                                    unde non eligendi, quaerat corporis nesciunt hic eveniet at placeat earum. Officiis dolorum sit natus
-                                    nihil, obcaecati optio, assumenda ipsum excepturi consectetur enim ad maiores dolore deleniti quasi
-                                    nisi quod, corporis saepe soluta dolorem sapiente incidunt aut.
+                                Como Full Stack Developer con más de 3 años de experiencia, me especializo en el desarrollo web, centrándome en el front-end con tecnologías como HTML5, CSS, Bootstrap, y Tailwind, además de Redux, React y React-Native. En el back-end, domino Node.js, Express y Sequelize, junto con bases de datos NoSQL y SQL. Mis habilidades incluyen el diseño de soluciones, aplicando metodologías SCRUM para fomentar el trabajo en equipo, la comunicación efectiva y el pensamiento crítico. Estoy comprometido con la excelencia en el desarrollo de aplicaciones web y móviles, buscando siempre soluciones innovadoras y eficientes.
                                 </p>
                             </div>
                         </div>
@@ -99,8 +96,9 @@ function Portafolio() {
                             <img src="/images/logo.png" alt="logo" className="experience__image" />
                             <div className="experience__info">
                                 <p className="experience__time">Feb 2017 - Current</p>
-                                <h3 className="experience__job">Fullstack web Developer</h3>
-                                <p className="experience__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur blanditiis quis illo, ipsa incidunt voluptatibus eos nulla, quod ad est consequatur fugit ullam animi quidem nesciunt vitae a repudiandae molestias!</p>
+                                <h3 className="experience__job">Fullstack web Developer </h3>
+                                <h4>Red Package S.A.S</h4>
+                                <p className="experience__description">Desde agosto de 2021 hasta la actualidad, he estado involucrado en el desarrollo y la gestión de Red Package, una plataforma web revolucionaria que simplifica la importación de mercancías desde Estados Unidos a Colombia. Como parte del equipo, he contribuido al diseño y la implementación de la herramienta, que permite a los usuarios crear casilleros virtuales personalizados, gestionar y consolidar sus compras en línea de manera eficiente. Nuestra misión es optimizar el proceso de envío y brindar una experiencia de importación sin complicaciones. Invito a todos a descubrir cómo simplificar sus compras internacionales en www.redpackage.app.</p>
                             </div>
                         </div>
                         <div className="experience">
@@ -218,9 +216,11 @@ function Portafolio() {
                         </div>
                     </article>
 
+                  {/* PROYECTOS DEL PORTAFOLIO */}
+
                     <article className="card card--project">
                         <div className="card__image-container">
-                            <img src="/images/project.jpg" alt="landingpage" className="card__image" />
+                            <img src="/images/rpss.png" alt="landingpage" className="card__image" />
                         </div>
                         <div className="project">
                             <div className="project__tags">
@@ -229,19 +229,17 @@ function Portafolio() {
                                 <span className="project__tag">#JS</span>
                                 <span className="project__tag">#JS</span>
                             </div>
-                            <h2 className="card__title">LandingPage</h2>
-                            <p className="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut unde nemo amet eius libero possimus.</p>
-                            <p className="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut unde nemo amet eius libero possimus.</p>
+                            <h2 className="card__title">Red Package WebAPP</h2>
+                            <p className="card__text">Desde 2021, lideré el desarrollo y despliegue de Red Package, plataforma que simplifica la importación de productos desde EE. UU. a Colombia. Visita www.redpackage.app para descubrir más.</p>
                             <div className="buttons">
-                                <a href="#" className="button button--primary">Demo</a>
-                                <a href="#" className="button button--ghost">Code</a>
+                                <a href="https://www.redpackage.app" target='_blank' className="button button--primary">Demo</a>
                             </div>
                         </div>
                     </article>
 
                     <article className="card card--project">
                         <div className="card__image-container">
-                            <img src="assets/images/project.jpg" alt="landingpage" className="card__image" />
+                            <img src="/images/LOGO-I.P.I..png" alt="landingpage" className="card__image" />
                         </div>
                         <div className="project">
                             <div className="project__tags">
@@ -250,19 +248,18 @@ function Portafolio() {
                                 <span className="project__tag">#JS</span>
                                 <span className="project__tag">#JS</span>
                             </div>
-                            <h2 className="card__title">LandingPage</h2>
-                            <p className="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut unde nemo amet eius libero possimus.</p>
-                            <p className="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut unde nemo amet eius libero possimus.</p>
+                            <h2 className="card__title">Frontend Web Developer - I.P.I Serviprecorte LTDA.</h2>
+                            <p className="card__text">Desarrollo del website empresarial y de contacto de la empresa con su posterior despliegue.</p>
                             <div className="buttons">
-                                <a href="#" className="button button--primary">Demo</a>
-                                <a href="#" className="button button--ghost">Code</a>
+                                <a href="https://ipiproject.onrender.com/" target='_blank' className="button button--primary">Demo</a>
+                                <a href="https://github.com/AFsoundpro/ipiproject" target='_blank' className="button button--ghost">Code</a>
                             </div>
                         </div>
                     </article>
 
                     <article className="card card--project">
                         <div className="card__image-container">
-                            <img src="assets/images/project.jpg" alt="landingpage" className="card__image" />
+                            <img src="/images/vpass.png" alt="landingpage" className="card__image" />
                         </div>
                         <div className="project">
                             <div className="project__tags">
@@ -271,9 +268,103 @@ function Portafolio() {
                                 <span className="project__tag">#JS</span>
                                 <span className="project__tag">#JS</span>
                             </div>
-                            <h2 className="card__title">LandingPage</h2>
-                            <p className="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut unde nemo amet eius libero possimus.</p>
-                            <p className="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut unde nemo amet eius libero possimus.</p>
+                            <h2 className="card__title">Frontend Vintage Pro Audio - Vintage Pro Audio</h2>
+                            <p className="card__text">Desarrollo del website empresarial y de contacto de la empresa con su posterior despliegue.</p>
+                            <div className="buttons">
+                                <a href="#" className="button button--primary">Demo</a>
+                                <a href="#" className="button button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article className="card card--project">
+                        <div className="card__image-container">
+                            <img src="/images/lprpss.png" alt="landingpage" className="card__image" />
+                        </div>
+                        <div className="project">
+                            <div className="project__tags">
+                                <span className="project__tag">#HTML</span>
+                                <span className="project__tag">#CSS</span>
+                                <span className="project__tag">#JS</span>
+                                <span className="project__tag">#JS</span>
+                            </div>
+                            <h2 className="card__title">Frontend Vintage Pro Audio - Vintage Pro Audio</h2>
+                            <p className="card__text">Desarrollo del website empresarial y de contacto de la empresa con su posterior despliegue.</p>
+                            <div className="buttons">
+                                <a href="https://landingrp.onrender.com/" target='_blank' className="button button--primary">Demo</a>
+                                <a href="https://github.com/AFsoundpro/landingrp" target='_blank' className="button button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article className="card card--project">
+                        <div className="card__image-container">
+                            <img src="/images/vpass.png" alt="landingpage" className="card__image" />
+                        </div>
+                        <div className="project">
+                            <div className="project__tags">
+                                <span className="project__tag">#HTML</span>
+                                <span className="project__tag">#CSS</span>
+                                <span className="project__tag">#JS</span>
+                                <span className="project__tag">#JS</span>
+                            </div>
+                            <h2 className="card__title">Frontend Vintage Pro Audio - Vintage Pro Audio</h2>
+                            <p className="card__text">Desarrollo del website empresarial y de contacto de la empresa con su posterior despliegue.</p>
+                            <div className="buttons">
+                                <a href="#" className="button button--primary">Demo</a>
+                                <a href="#" className="button button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article className="card card--project">
+                        <div className="card__image-container">
+                            <img src="/images/vpass.png" alt="landingpage" className="card__image" />
+                        </div>
+                        <div className="project">
+                            <div className="project__tags">
+                                <span className="project__tag">#HTML</span>
+                                <span className="project__tag">#CSS</span>
+                                <span className="project__tag">#JS</span>
+                                <span className="project__tag">#JS</span>
+                            </div>
+                            <h2 className="card__title">Frontend Vintage Pro Audio - Vintage Pro Audio</h2>
+                            <p className="card__text">Desarrollo del website empresarial y de contacto de la empresa con su posterior despliegue.</p>
+                            <div className="buttons">
+                                <a href="#" className="button button--primary">Demo</a>
+                                <a href="#" className="button button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article className="card card--project">
+                        <div className="card__image-container">
+                            <img src="/images/vpass.png" alt="landingpage" className="card__image" />
+                        </div>
+                        <div className="project">
+                            <div className="project__tags">
+                                <span className="project__tag">#HTML</span>
+                                <span className="project__tag">#CSS</span>
+                                <span className="project__tag">#JS</span>
+                                <span className="project__tag">#JS</span>
+                            </div>
+                            <h2 className="card__title">Frontend Vintage Pro Audio - Vintage Pro Audio</h2>
+                            <p className="card__text">Desarrollo del website empresarial y de contacto de la empresa con su posterior despliegue.</p>
+                            <div className="buttons">
+                                <a href="#" className="button button--primary">Demo</a>
+                                <a href="#" className="button button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article className="card card--project">
+                        <div className="card__image-container">
+                            <img src="/images/vpass.png" alt="landingpage" className="card__image" />
+                        </div>
+                        <div className="project">
+                            <div className="project__tags">
+                                <span className="project__tag">#HTML</span>
+                                <span className="project__tag">#CSS</span>
+                                <span className="project__tag">#JS</span>
+                                <span className="project__tag">#JS</span>
+                            </div>
+                            <h2 className="card__title">Frontend Vintage Pro Audio - Vintage Pro Audio</h2>
+                            <p className="card__text">Desarrollo del website empresarial y de contacto de la empresa con su posterior despliegue.</p>
                             <div className="buttons">
                                 <a href="#" className="button button--primary">Demo</a>
                                 <a href="#" className="button button--ghost">Code</a>
