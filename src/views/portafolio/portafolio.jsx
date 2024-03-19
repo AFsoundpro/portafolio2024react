@@ -283,8 +283,7 @@ function Portafolio() {
                             <h2 className="card__title">Frontend Vintage Pro Audio - Vintage Pro Audio</h2>
                             <p className="card__text">Desarrollo del website empresarial y de contacto de la empresa con su posterior despliegue.</p>
                             <div className="buttons">
-                                <a href="#" className="button button--primary">Demo</a>
-                                <a href="#" className="button button--ghost">Code</a>
+                                <a href="https://vintageproaudio.onrender.com/" className="button button--primary">Demo</a>
                             </div>
                         </div>
                     </article>
