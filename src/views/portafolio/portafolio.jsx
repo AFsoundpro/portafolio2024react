@@ -2,65 +2,65 @@ import React, { useState, useEffect } from 'react';
 import './portafolio.css';
 
 function Portafolio() {
-  const [darkMode, setDarkMode] = useState(false);
-  const [primaryColor, setPrimaryColor] = useState('hsl(214, 84%, 56%)');
+    const [darkMode, setDarkMode] = useState(false);
+    const [primaryColor, setPrimaryColor] = useState('hsl(214, 84%, 56%)');
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
-  const toggleColor = (color) => {
-    setPrimaryColor(color);
-  };
-
-  useEffect(() => {
-    const toggleTheme = document.getElementById('toggle-theme');
-    const toggleIcon = document.getElementById('toggle-icon');
-    const toggleText = document.getElementById('toggle-text');
-    const toggleColors = document.getElementById('toggle-colors');
-    const rootStyles = document.documentElement.style;
-
-    const handleToggleTheme = () => {
-      document.body.classList.toggle('dark');
-      if (toggleIcon.src.includes('moon.svg')) {
-        toggleIcon.src = '/icons/sun.svg';
-        toggleText.textContent = 'Light Mode';
-      } else {
-        toggleIcon.src = '/icons/moon.svg';
-        toggleText.textContent = 'Dark Mode';
-      }
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
     };
 
-    const handleToggleColors = (e) => {
-      rootStyles.setProperty('--primary-color', e.target.dataset.color);
+    const toggleColor = (color) => {
+        setPrimaryColor(color);
     };
 
-    toggleTheme.addEventListener('click', handleToggleTheme);
-    toggleColors.addEventListener('click', handleToggleColors);
+    useEffect(() => {
+        const toggleTheme = document.getElementById('toggle-theme');
+        const toggleIcon = document.getElementById('toggle-icon');
+        const toggleText = document.getElementById('toggle-text');
+        const toggleColors = document.getElementById('toggle-colors');
+        const rootStyles = document.documentElement.style;
 
-    return () => {
-      toggleTheme.removeEventListener('click', handleToggleTheme);
-      toggleColors.removeEventListener('click', handleToggleColors);
-    };
-  }, []);
+        const handleToggleTheme = () => {
+            document.body.classList.toggle('dark');
+            if (toggleIcon.src.includes('moon.svg')) {
+                toggleIcon.src = '/icons/sun.svg';
+                toggleText.textContent = 'Light Mode';
+            } else {
+                toggleIcon.src = '/icons/moon.svg';
+                toggleText.textContent = 'Dark Mode';
+            }
+        };
 
-  return (
-    <div className={darkMode ? 'dark' : ''}>
-      <header className="header">
-        <div className="switches">
-          <div onClick={toggleDarkMode} id="toggle-theme" className="toggle-theme">
-            <img id="toggle-icon" src="/icons/moon.svg" alt="icon theme" className="toggle-theme__icon" />
-            <p id="toggle-text" className="toggle-theme__text">{darkMode ? 'Light Mode' : 'Dark Mode'}</p>
-          </div>                             
-       
-        </div>          
-        <div id="toggle-colors" className="colors">
-          <div data-color="hsl(46, 84%, 56%)" className="colors__item colors__item--orange" onClick={(e) => toggleColor(e.target.dataset.color)}></div>
-          <div data-color="hsl(150, 84%, 56%)" className="colors__item colors__item--green" onClick={(e) => toggleColor(e.target.dataset.color)}></div>
-          <div data-color="hsl(276, 84%, 56%)" className="colors__item colors__item--purple" onClick={(e) => toggleColor(e.target.dataset.color)}></div>
-          <div data-color="hsl(214, 84%, 56%)" className="colors__item colors__item--blue" onClick={(e) => toggleColor(e.target.dataset.color)}></div>
-        </div>
-      </header>
+        const handleToggleColors = (e) => {
+            rootStyles.setProperty('--primary-color', e.target.dataset.color);
+        };
+
+        toggleTheme.addEventListener('click', handleToggleTheme);
+        toggleColors.addEventListener('click', handleToggleColors);
+
+        return () => {
+            toggleTheme.removeEventListener('click', handleToggleTheme);
+            toggleColors.removeEventListener('click', handleToggleColors);
+        };
+    }, []);
+
+    return (
+        <div className={darkMode ? 'dark' : ''}>
+            <header className="header">
+                <div className="switches">
+                    <div onClick={toggleDarkMode} id="toggle-theme" className="toggle-theme">
+                        <img id="toggle-icon" src="/icons/moon.svg" alt="icon theme" className="toggle-theme__icon" />
+                        <p id="toggle-text" className="toggle-theme__text">{darkMode ? 'Light Mode' : 'Dark Mode'}</p>
+                    </div>
+
+                </div>
+                <div id="toggle-colors" className="colors">
+                    <div data-color="hsl(46, 84%, 56%)" className="colors__item colors__item--orange" onClick={(e) => toggleColor(e.target.dataset.color)}></div>
+                    <div data-color="hsl(150, 84%, 56%)" className="colors__item colors__item--green" onClick={(e) => toggleColor(e.target.dataset.color)}></div>
+                    <div data-color="hsl(276, 84%, 56%)" className="colors__item colors__item--purple" onClick={(e) => toggleColor(e.target.dataset.color)}></div>
+                    <div data-color="hsl(214, 84%, 56%)" className="colors__item colors__item--blue" onClick={(e) => toggleColor(e.target.dataset.color)}></div>
+                </div>
+            </header>
             <main className="main">
                 <section className="column column--left">
                     {/* PROFILE CARD */}
@@ -85,7 +85,7 @@ function Portafolio() {
                                     </a>
                                 </div>
                                 <p className="card__text">
-                                Como Full Stack Developer con más de 3 años de experiencia, me especializo en el desarrollo web, centrándome en el front-end con tecnologías como HTML5, CSS, Bootstrap, y Tailwind, además de Redux, React y React-Native. En el back-end, domino Node.js, Express y Sequelize, junto con bases de datos NoSQL y SQL. Mis habilidades incluyen el diseño de soluciones, aplicando metodologías SCRUM para fomentar el trabajo en equipo, la comunicación efectiva y el pensamiento crítico. Estoy comprometido con la excelencia en el desarrollo de aplicaciones web y móviles, buscando siempre soluciones innovadoras y eficientes.
+                                    Como Full Stack Developer con más de 3 años de experiencia, me especializo en el desarrollo web, centrándome en el front-end con tecnologías como HTML5, CSS, Bootstrap, y Tailwind, además de Redux, React y React-Native. En el back-end, domino Node.js, Express y Sequelize, junto con bases de datos NoSQL y SQL. Mis habilidades incluyen el diseño de soluciones, aplicando metodologías SCRUM para fomentar el trabajo en equipo, la comunicación efectiva y el pensamiento crítico. Estoy comprometido con la excelencia en el desarrollo de aplicaciones web y móviles, buscando siempre soluciones innovadoras y eficientes.
                                 </p>
                             </div>
                         </div>
@@ -119,21 +119,25 @@ function Portafolio() {
                                 <p className="experience__description">Lorem ipsum dolor sit, amet consectetur.</p>
                             </div>
                         </div>
+                    </article>
+                    <article>
                         <article className="card card--hobbies">
                             <h2 className="card__title">Hobbies</h2>
                             <div className="card__image-container">
-                                <img src="/images/hobbie.jpg" alt="bike" />
+                                <img src="/images/console.webp" alt="bike" />
                             </div>
-                            <h3 className="hobbie__title">Biking</h3>
-                            <p className="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vero.</p>
+                            <h3 className="hobbie__title">Crear Musica</h3>
+                            <p className="card__text">Como ingeniero profesional en producción de audio, he perfeccionado mi habilidad para crear música utilizando las potentes herramientas que ofrecen Pro Tools y Ableton. A lo largo de mi carrera, he explorado las vastas posibilidades que estos programas brindan, desde la mezcla y masterización hasta el diseño sonoro innovador, estableciéndome en la industria hasta la actualidad. Mi trabajo refleja mi pasión por transformar ideas en sonidos impactantes y emocionantes experiencias auditivas.</p>
                         </article>
+                    </article>
+                    <article>
                         <article className="card card--hobbies">
                             <h2 className="card__title">Hobbies</h2>
                             <div className="card__image-container">
-                                <img src="/images/hobbie.jpg" alt="bike" />
+                                <img src="/images/picasso.jpg" alt="bike" />
                             </div>
-                            <h3 className="hobbie__title">Biking</h3>
-                            <p className="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vero.</p>
+                            <h3 className="hobbie__title">Arte</h3>
+                            <p className="card__text">La música me hace vibrar, el cine me transporta, la pintura me fascina y la escultura me deja sin aliento. Sumergirme en estas formas de arte es como viajar a mundos paralelos donde la imaginación no tiene límites y la emoción fluye libremente. Es mi escape, mi alegría, mi pasión desenfrenada.</p>
                         </article>
                     </article>
                 </section>
@@ -226,7 +230,7 @@ function Portafolio() {
                         </div>
                     </article>
 
-                  {/* PROYECTOS DEL PORTAFOLIO */}
+                    {/* PROYECTOS DEL PORTAFOLIO */}
 
                     <article className="card card--project">
                         <div className="card__image-container">
@@ -250,7 +254,7 @@ function Portafolio() {
 
                     <article className="card card--project">
                         <div className="card__image-container">
-                            <img src="/images/LOGO-I.P.I..png" alt="landingpage" className="card__image" />
+                            <img src="/images/ipi.png" alt="landingpage" className="card__image" />
                         </div>
                         <div className="project">
                             <div className="project__tags">
@@ -283,7 +287,7 @@ function Portafolio() {
                             <h2 className="card__title">Frontend Vintage Pro Audio - Vintage Pro Audio</h2>
                             <p className="card__text">Desarrollo del website empresarial y de contacto de la empresa con su posterior despliegue.</p>
                             <div className="buttons">
-                                <a href="https://vintageproaudio.onrender.com/" className="button button--primary">Demo</a>
+                                <a target="_blank" href="https://vintageproaudio.onrender.com/" className="button button--primary">Demo</a>
                             </div>
                         </div>
                     </article>
@@ -382,8 +386,92 @@ function Portafolio() {
                             </div>
                         </div>
                     </article>
+                    <article className="card card--project">
+                        <div className="card__image-container">
+                            <img src="/images/vpass.png" alt="landingpage" className="card__image" />
+                        </div>
+                        <div className="project">
+                            <div className="project__tags">
+                                <span className="project__tag">#HTML</span>
+                                <span className="project__tag">#CSS</span>
+                                <span className="project__tag">#JS</span>
+                                <span className="project__tag">#JS</span>
+                            </div>
+                            <h2 className="card__title">Frontend Vintage Pro Audio - Vintage Pro Audio</h2>
+                            <p className="card__text">Desarrollo del website empresarial y de contacto de la empresa con su posterior despliegue.</p>
+                            <div className="buttons">
+                                <a href="#" className="button button--primary">Demo</a>
+                                <a href="#" className="button button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article className="card card--project">
+                        <div className="card__image-container">
+                            <img src="/images/vpass.png" alt="landingpage" className="card__image" />
+                        </div>
+                        <div className="project">
+                            <div className="project__tags">
+                                <span className="project__tag">#HTML</span>
+                                <span className="project__tag">#CSS</span>
+                                <span className="project__tag">#JS</span>
+                                <span className="project__tag">#JS</span>
+                            </div>
+                            <h2 className="card__title">Frontend Vintage Pro Audio - Vintage Pro Audio</h2>
+                            <p className="card__text">Desarrollo del website empresarial y de contacto de la empresa con su posterior despliegue.</p>
+                            <div className="buttons">
+                                <a href="#" className="button button--primary">Demo</a>
+                                <a href="#" className="button button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article className="card card--project">
+                        <div className="card__image-container">
+                            <img src="/images/vpass.png" alt="landingpage" className="card__image" />
+                        </div>
+                        <div className="project">
+                            <div className="project__tags">
+                                <span className="project__tag">#HTML</span>
+                                <span className="project__tag">#CSS</span>
+                                <span className="project__tag">#JS</span>
+                                <span className="project__tag">#JS</span>
+                            </div>
+                            <h2 className="card__title">Frontend Vintage Pro Audio - Vintage Pro Audio</h2>
+                            <p className="card__text">Desarrollo del website empresarial y de contacto de la empresa con su posterior despliegue.</p>
+                            <div className="buttons">
+                                <a href="#" className="button button--primary">Demo</a>
+                                <a href="#" className="button button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article className="card card--project">
+                        <div className="card__image-container">
+                            <img src="/images/vpass.png" alt="landingpage" className="card__image" />
+                        </div>
+                        <div className="project">
+                            <div className="project__tags">
+                                <span className="project__tag">#HTML</span>
+                                <span className="project__tag">#CSS</span>
+                                <span className="project__tag">#JS</span>
+                                <span className="project__tag">#JS</span>
+                            </div>
+                            <h2 className="card__title">Frontend Vintage Pro Audio - Vintage Pro Audio</h2>
+                            <p className="card__text">Desarrollo del website empresarial y de contacto de la empresa con su posterior despliegue.</p>
+                            <div className="buttons">
+                                <a href="#" className="button button--primary">Demo</a>
+                                <a href="#" className="button button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
                 </section>
             </main>
+            <footer>
+                <p>Copyright © 2024 Andres F Sanchez P. Todos los derechos reservados.</p>
+                <p>Sígue en:
+                    <a href="https://www.twitter.com/tucuenta" target="_blank">Twitter</a> |
+                    <a href="https://www.facebook.com/tucuenta" target="_blank">Facebook</a> |
+                    <a href="https://www.instagram.com/tucuenta" target="_blank">Instagram</a>
+                </p>
+            </footer>
         </div>
 
     );

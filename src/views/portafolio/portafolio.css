@@ -372,3 +372,29 @@ header {
         transform: translateX(var(--skills-bar-length));
     }
 }
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  footer {
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    padding: 20px 0; /* Espaciado interno */
+    font-size: 14px; /* Tamaño del texto */
+    width: 100%; /* Asegura que el footer tenga un ancho del 100% */
+  }
+  
+  footer a {
+    color: #6FD0C5; /* Color de los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin: 0 10px; /* Espaciado alrededor de los enlaces */
+  }
+  
+  footer a:hover {
+    text-decoration: underline; /* Añade subrayado al pasar el ratón sobre los enlaces */
+  }
